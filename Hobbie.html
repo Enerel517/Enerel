@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> My Profile </title>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+        h1 {
+            margin-left: 80px;
+        }
+        .p1 {
+            margin-left: 120px;
+        } 
+        h3 {
+            font-style: italic;
+            margin-left: 80px;
+        }
+        h5 {
+            margin-left: 50px;
+        }
+        p{
+            color: black;
+        }
+        div, img {
+            border-radius: 100%;
+            max-height: 250px;
+            max-height: 250px;
+        }
+        .center{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .p2 {
+            text-align: center;
+        }
+        /*.plus {
+            text-align: right;
+            margin-top: -30%;
+        }
+        .res {
+            text-align: right;
+            margin-top: -30%;
+        }
+        .min {
+            text-align: right;
+            margin-top: -30%;
+        }*/
+        .buttons {
+            margin: auto;
+            width: 40%;
+  /* border: 3px solid green; */
+  /* padding: 10px; */
+        }
+        .button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+        #counter{
+            text-align: center;
+        }
+    </style>
+    <script>
+        function plus() {
+            var currentCount  = parseInt(document.getElementById("counter").innerHTML);
+            currentCount = currentCount + 1;
+            document.getElementById("counter").innerHTML = currentCount;
+        }
+        function restart() {
+            var currentCount  = parseInt(document.getElementById("counter").innerHTML);
+            currentCount = 0;
+            document.getElementById("counter").innerHTML = currentCount;
+        }
+        function minus() {
+            var currentCount  = parseInt(document.getElementById("counter").innerHTML);
+            currentCount = currentCount - 1;
+            document.getElementById("counter").innerHTML = currentCount;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>My Hobbies</h1>
+    <p class="p1">Hello! welcome to my website</p>
+    <div>
+        <img src="https://img.freepik.com/free-vector/happy-shiba-inu-dog-japan-cartoon-vector-icon-illustration-animal-nature-icon-concept-isolated-premium-vector-flat-cartoon-style_138676-3650.jpg", class="center">
+    </div>
+    <h3>My Hobbies are</h3>
+    <h5>I LIKE TO...</h5>
+    <ul>
+        <li> play with dogs</li>
+        <li>read books</li>
+        <li>watch animes</li>
+        <li>write coode</li>
+    </ul>
+
+</br>
+</br>
+</br>
+</br>
+    <p class="p2"> Now I'm learning HTML, CSS and JavaScript</p>
+    <p id="counter"> 0 </p>
+    </br>
+    <div class="buttons">
+        <button onclick="plus() "class="button">+</button>
+        <button onclick="restart()" class="button">Restart</button>
+        <button onclick="minus()" class="button">-</button>
+    </div>
+</body>
+
+
+</html>
